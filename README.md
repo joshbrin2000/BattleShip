@@ -1,2 +1,1 @@
-# BattleShip
-Battlship written with JavaScript, CSS, and Webpack. Using Jest unit testing.
+A battleship game made using JavaScript and CSS. Used Webpack, npm, babel, ESlint, and using Jest for unit testing
