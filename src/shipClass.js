@@ -1,14 +1,28 @@
 class Ship {
-    constructor(name, pos, len) {
+    constructor(name, len) {
         this.name = name;
-        this.pos = pos;
         this.len = len;
         this.sunk = false;
-        this.hit = Array(this.len).fill(false);
+        this.hit = 0;
     }
 
-    getHit() {
+    hitCount() {
         return this.hit;
+    }
+
+    getName() {
+        return this.name;
+    }
+
+    regHit() {
+        this.hit += 1;
+    }
+
+    isSunk() {
+        if (this.hit === this.len) {
+            return true;
+        }
+        return false;
     }
 }
 
